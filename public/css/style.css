@@ -1,6 +1,38 @@
-p {
-  color: red;
-  font-size: xx-large;
+.container {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+.container .btn {
+  background: #011c37;
+  color: #15DEA5;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.container .btn:hover {
+  transform: scale(1.15);
+}
+.container .form__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .form__group label {
+  font-size: x-large;
+  padding-left: 1rem;
+  font-weight: bolder;
+}
+.container .form__group input {
+  margin: 2rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 50px;
+  font-size: larger;
 }
 
 /*# sourceMappingURL=style.css.map */

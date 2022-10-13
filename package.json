@@ -1,11 +1,19 @@
 {
   "name": "animation",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laurent-N67/Sass-discovery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Laurent-N67/Sass-discovery/issues"
+  },
+  "homepage": "https://github.com/Laurent-N67/Sass-discovery#readme",
+  "description": ""
 }

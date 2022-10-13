@@ -1,4 +1,45 @@
-p{
-    color: red;
-    font-size: xx-large;
+$cd-btn: #011c37;
+
+$cd-txt: #15DEA5;
+
+.container{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+
+    & .btn {
+        background: $cd-btn;
+        color: $cd-txt;
+        font-size: 3rem;
+        cursor: pointer;
+        padding: 1.85rem 3rem;
+        border-radius: 10rem;
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    & .form{
+
+        &__group{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            & label{
+                font-size: x-large;
+                padding-left: 1rem;
+                font-weight: bolder;
+            }
+            & input{
+                margin: 2rem;
+                padding: 1rem;
+                width: 100%;
+                border-radius: 50px;
+                font-size: larger;
+            }
+        }
+    }
 }
