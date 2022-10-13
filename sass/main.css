@@ -12,10 +12,12 @@
   padding: 1.85rem 3rem;
   border-radius: 10rem;
   transform: scale(1);
-  transition: transform 400ms;
+  transition: transform 2s ease, background-color 5s ease;
 }
 .container .btn:hover {
   transform: scale(1.15);
+  background-color: skyblue;
+  color: black;
 }
 .container .form__group {
   display: flex;
@@ -35,6 +37,8 @@
   font-size: larger;
   border: 3px solid black;
   outline: none;
+  transition: all 2s ease;
+  transform: scale(1);
 }
 .container .form__group input:not(:focus):valid {
   color: lawngreen;
@@ -46,4 +50,26 @@
 .container .form__group input:focus {
   background-color: silver;
   border: 3px solid red;
+}
+.container .dlBar__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .dlBar__group button {
+  scale: 1.5;
+  border-radius: 10px;
+}
+.container .dlBar__group button:active + div {
+  background-position: left;
+}
+.container .dlBar__group div {
+  margin: 2rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 50px;
+  font-size: larger;
+  background: linear-gradient(to left, red 50%, blue 50%) right;
+  background-size: 200% 100%;
+  transition: all 5s ease;
 }/*# sourceMappingURL=main.css.map */
