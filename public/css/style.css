@@ -33,6 +33,19 @@
   width: 100%;
   border-radius: 50px;
   font-size: larger;
+  border: 3px solid black;
+  outline: none;
+}
+.container .form__group input:not(:focus):valid {
+  color: lawngreen;
+}
+.container .form__group input:not(:focus):invalid {
+  background-color: red;
+  font-weight: bolder;
+}
+.container .form__group input:focus {
+  background-color: silver;
+  border: 3px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

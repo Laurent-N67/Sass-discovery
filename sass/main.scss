@@ -39,6 +39,19 @@ $cd-txt: #15DEA5;
                 width: 100%;
                 border-radius: 50px;
                 font-size: larger;
+                border: 3px solid black;
+                outline: none;
+                &:not(:focus):valid{
+                    color: lawngreen;
+                }
+                &:not(:focus):invalid{
+                    background-color: red;
+                    font-weight: bolder;
+                }
+                &:focus{
+                    background-color: silver;
+                    border: 3px solid red;
+                }
             }
         }
     }
